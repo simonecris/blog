@@ -13,19 +13,31 @@ Who wants to connect cables and dump data manually, when you can do it on the fl
 The implemented functionalities are intended to speed up the workflow using a Pwnagotchi, allowing the full control of the device from your smartphone/PC (using Telegram). 
 
 ## Features
-- Notification when a new handshake is captured, with contextual menu and download options:
+
+### Notifications
+
+Notification when a new handshake is captured, with contextual menu and download options:
 
   ![new_hs](https://github.com/simonecris/TeleGotchi/assets/63792651/63ad59b0-c0fb-4697-8708-c51f47d670b0)
     - **pcap**: Download original caputed .pcap file.
     - **hashcat**: Convert pcap to Hashcat .22000 file, ready to download.
     - **wordlist**: Generate a wordlist based on ESSID, ready to download. 
-- Download any captured handshake using 🧰 Toolbox -> 💾️ **Handshakes downloader**.
+
+### Handshakes downloader
+
+Download any captured handshake using 🧰 Toolbox -> 💾️ **Handshakes downloader**.
 
   ![downloader](https://github.com/simonecris/TeleGotchi/assets/63792651/7f76a3fa-db27-4150-a1b0-fdb999154b3e)
-- Inline Keyboard navigation menu, with different device management options. Eg. ⚙️ **Manage device**:
+
+### Navigation
+
+Inline Keyboard navigation menu, with different device management options. Eg. ⚙️ **Manage device**:
 
   ![image](https://github.com/simonecris/TeleGotchi/assets/63792651/0ba14091-68d6-45ae-81c5-9eb15f8a03dc)
-- Backup important directories/files and download it as a tar.gz file. 
+
+### Backup
+
+Backup important directories/files and download it as a tar.gz file. 
 
 and much more! 
 
@@ -33,7 +45,7 @@ and much more!
 1. Install dependencies and necessary tools. 
 
 SSH to your pwnagotchi and run the following commands:
-```
+```bash
 sudo pip3 uninstall telegram python-telegram-bot
 sudo pip3 install python-telegram-bot==13.15
 
@@ -46,7 +58,7 @@ sudo make && sudo make install
 2. Copy telegram.py file inside the custom plugins folder.
 
 Default way is:
-```
+```bash
 cd /usr/local/share/pwnagotchi/custom-plugins #default path for custom plugins
 sudo wget https://raw.githubusercontent.com/simonecris/TeleGotchi/main/telegram.py
 ```
@@ -73,4 +85,5 @@ Big thanks to https://github.com/wpa-2 for the initial plugin idea.
 
 ## Disclaimer and notes
 
-This plugin is for educational purposes only. I take no responsibility for its usage by third parties, and any illegal activities are strictly prohibited. Use at your own risk.  
+> This plugin is for educational purposes only. I take no responsibility for its usage by third parties, and any illegal activities are strictly prohibited. Use at your own risk.  
+{: .prompt-danger}
