@@ -2,8 +2,6 @@
 title: Telegotchi | Pwnagotchi Telegram plugin
 author: bluem3th
 date: 2024-03-09 19:02:15 +0200
-categories: [Projects]
-tags: [pwnagotchi, telegram]
 render_with_liquid: false
 comments: true
 ---
